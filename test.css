@@ -1,0 +1,332 @@
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Cairo', sans-serif;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    padding:0px 10%;
+    align-items: center;
+    background-color: #06283D;
+    color: #DFF6FF;
+    border-top:5px #F7950C solid;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+.header h2 {
+    margin:3px 0px ;
+    cursor: pointer;
+    color: #F7950C;
+}
+header h2:hover {
+    color: #DFF6FF;
+}
+header a {
+    text-decoration: none;
+    color: #DFF6FF;
+    margin-left: 30px;
+    font-size: 15px;
+    transition: ease .7s;
+}
+header a:hover:not(.active) {
+        font-size: 18px;
+    color: #F7950C;
+}
+.active {
+    font-size: 20px;
+    color: #DFF6FF;
+    background-color: #F7950C;
+    padding:7px 5px;
+    height: inherit;
+}
+.active:hover {
+    color: #1363DF;
+}
+.cursor {
+    background-color: rgb(0, 0, 0);
+    z-index: 3;
+    display: relative;
+}
+.cursor div {
+    padding: 50px;
+    width: 500px;
+    color: #DFF6FF;
+    position: absolute;
+    top: 10%;
+    margin: 100px;
+    z-index: 3;
+}
+
+.cursor img {
+    width: 100%;
+    height: 100vh;
+    background-attachment: fixed;
+    background-position: center;
+    opacity: .2;
+    z-index: 1;
+}
+.cursor h1 {
+    font-size: 40px;
+}
+.cursor h1 span {
+    color: #F7950C;
+}
+.cursor button {
+    margin-top: 15px;
+    background-color: #F7950C;
+    padding: 0px 10px;
+    color: #DFF6FF;
+    font-size: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.cursor button:hover {
+    color: #1363DF;
+    font-weight: bold;
+}
+.second {
+    display: flex;
+    margin: 100px 100px 50px 100px;
+    justify-content: space-around;
+    align-items: center;
+}
+.second p {
+    width: 35%;
+    font-size: 25px;
+    color: #06283D;
+    transition: ease .1s;
+}
+
+.second img {
+    opacity: 1;
+    height: 350px;
+    width: 400px;
+    border-radius:20px ;
+    margin-right: 75px;
+    background-position: center;
+    background-color: rgb(0, 0, 0);
+}
+.second img:hover {
+        opacity: .95;
+        box-shadow: 2px 2px 2px #F7950C;
+}
+.services {
+justify-content: center;
+}
+.services h2 {
+    text-align: center;
+    font-size: 45px;
+    color: #06283D;
+    margin-bottom: 40px;
+}
+.services h2 span {
+    font-size: 1.1em;
+}
+.services .container {
+display: flex;
+justify-content: space-around;
+flex-wrap: wrap;
+}
+.services .card {
+    width: 350px;
+    height: 400px;
+background-color: #06283D;
+padding: 20px;
+color: #ffffff;
+margin-bottom: 30px;
+border-radius: 30px ;
+align-items: center;
+box-shadow:4px 4px  #F7950C;
+}
+.services .card h3 {
+    color: #F7950C;
+    text-align: center;
+}
+.services .card:hover {
+    box-shadow:4px 4px 5px #F7950C;
+}
+.services .icon {
+    font-size: 35px;
+    text-align: center;
+}
+.pic {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-image: url(/images/alfons-morales-YLSwjSy7stw-unsplash.jpg);
+    height: fit-content;
+    align-items: center;
+    padding: 100px 100px 75px 100px;
+    background-blend-mode: overlay;
+    background-color: rgb(0, 0, 0,.678);
+}
+.pic img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    border:2px #F7950C solid;
+}
+.our-books {
+    padding-top: 30px;
+}
+.our-books h2 {
+    text-align: center;
+    font-size: 40px;
+    color: #06283D;
+    padding-bottom: 20px;
+}
+.books {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.books .book img{
+width:350px;
+}
+.books .book {
+    background-color: #DFF6FF;
+    padding: 20px;
+    margin: 0px 30px 30px 0px;
+    color: #06283D;
+    border-radius: 15px;
+    cursor: pointer;
+    /* height: fit-content; */
+}
+.books .sp {
+font-size: 25px;
+font-weight: bolder;
+cursor: pointer;
+margin-left: 25px;
+color: #06283D;
+background-color: #DFF6FF;
+padding: 5px;
+border-radius: 10px;
+}
+.books .sp:hover {
+    border-radius: 10px;
+    border: #06283D solid;
+    opacity: .9;
+}
+.form-container {
+    background-image: url(/images/home-office-336581_1920-16x9.jpg);
+    background-blend-mode: overlay;
+    background-color: rgb(0, 0, 0 ,.7);
+    background-size: cover;
+    padding: 20px 0px;
+    background-position: fixed;
+    padding-bottom: 75px;
+}
+.form {
+    background-color: #06283D;
+    justify-content: center;
+    display: flex;
+    width: 50%;
+    margin-left: calc(50% / 2);
+    margin-top: 50px;
+    padding-bottom: 50px;
+    border-radius: 30px;
+    border:3px #F7950C solid;
+}
+.form .container {
+    align-items: center;
+padding: 20px 40px;
+color: #DFF6FF;
+}
+.form .container input[type=text],textarea,select {
+    width: 100%;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+}
+.form input[type=submit] {
+    background-color: #e68b0c;
+    padding: 0px 10px;
+    border: none;
+    color: #06283D;
+    font-weight: bold;
+    border-radius: 3px;
+}
+.form input[type=submit]:hover {
+    background-color: #cc7b0a;
+}
+.form h2 {
+    color: #F7950C;
+}
+.footer {
+    padding: 50px 0px;
+    background-color: #06283D;
+    border-top: 3px #F7950C solid;
+
+}
+.footer .contact {
+    display: flex;
+    justify-content: space-around;
+    padding:0px 450px;
+}
+.footer h2{
+padding-bottom: 5px;
+/* border-bottom:2px solid ; */
+text-align: center;
+margin-bottom: 20px;
+font-size: 35px;
+color: #F7950C;
+}
+
+.fa {
+    padding: 20px;
+    font-size: 50px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+  }
+.fa:hover {
+    outline:2px #F7950C solid;
+    opacity: 0.7;
+
+}
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+    border-radius: 40px;
+}
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+    border-radius: 40px;
+}
+.fa-instagram {
+    background: #125688;
+    color: white;
+    border-radius: 40px;
+}
+.fa-youtube {
+    background: #bb0000;
+    color: white;
+    border-radius: 40px;
+}
+.fa-linkedin {
+    background: #007bb5;
+    color: white;
+    border-radius: 40px;
+  }
+::-webkit-scrollbar {
+    width: 10px;
+    cursor: pointer;
+}
+::-webkit-scrollbar-track {
+    background-color: #06283D;
+}
+::-webkit-scrollbar-thumb {
+    background-color: #F7950C;
+    border-radius: 10px;
+
+}
+::-webkit-scrollbar-thumb:hover {
+    background-color: #e68b0c;
+}
